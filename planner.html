@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Academic Planner — Chinedu Promise Mmaduabuchi</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script defer src="assets/js/site.js"></script>
+    <script defer src="assets/js/planner.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><img src="assets/images/printer-mark.svg" alt="" /><span
+          >CHINEDU PROMISE<br />MMADUABUCHI</span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        MENU
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a href="projects.html">Projects</a
+        ><a href="planner.html" aria-current="page">Planner</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="planner-page">
+      <div class="wrap">
+        <div class="planner-head">
+          <div>
+            <h1>
+              Make a plan.<br /><span class="serif">Work it through.</span>
+            </h1>
+          </div>
+
+        </div>
+        <section class="docket" aria-label="Academic task planner">
+          <aside class="docket-side">
+            <span class="serial">CPM | STUDY DOCKET</span>
+            <h2>Today's<br />work order.</h2>
+            <p>
+              Small steps count.
+            </p>
+            <div class="docket-count">
+              <span class="eyebrow">Tasks in progress</span
+              ><strong id="remaining-count">0</strong>
+            </div>
+            <img src="assets/images/printer-mark.svg" alt="" />
+          </aside>
+          <div class="docket-main">
+            <form class="task-form" id="task-form">
+              <div class="field">
+                <label for="task-title">Task description</label
+                ><input
+                  id="task-title"
+                  name="task"
+                  type="text"
+                  placeholder="e.g. Review lecture notes"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="task-date">Due date</label
+                ><input id="task-date" name="due" type="date" />
+              </div>
+              <button class="button" type="submit">Add task +</button>
+            </form>
+            <div class="task-meta">
+              <span>Task register</span><span id="task-total">0 entries</span>
+            </div>
+            <ul class="task-list" id="task-list" aria-live="polite"></ul>
+            <div class="planner-foot">
+              <span id="planner-message"
+                >Your tasks are saved in this browser.</span
+              ><button class="delete-task" id="clear-completed" type="button">
+                Clear completed tasks
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <span class="eyebrow">One task at a time</span>
+            <h2>Progress is a <span class="serif">practice.</span></h2>
+          </div>
+          <a class="button" href="about.html">Back to profile ↗</a>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year></span> Chinedu Promise Mmaduabuchi</span
+          ><span>Built around learning, design & print.</span
+          ><a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
